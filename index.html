@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wesley Rodrigues | Software Architecture</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #000; color: #fff; scroll-behavior: smooth; }
+        .glass { background: rgba(24, 24, 27, 0.6); backdrop-filter: blur(12px); border: 1px solid rgba(63, 63, 70, 0.5); }
+        .grid-bg { background-image: radial-gradient(#1f1f1f 1px, transparent 1px); background-size: 40px 40px; }
+        .blue-gradient { background: radial-gradient(circle at 50% 0%, rgba(37, 99, 235, 0.15) 0%, transparent 70%); }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .animate-reveal { animation: fadeIn 0.8s ease-out forwards; }
+    </style>
+</head>
+<body class="grid-bg">
+
+    <nav class="fixed top-0 w-full z-50 border-b border-zinc-800 bg-black/80 backdrop-blur-md">
+        <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+            <span class="text-white font-extrabold tracking-tighter text-xl">WR.</span>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-zinc-400">
+                <a href="#home" class="hover:text-white transition-colors">Início</a>
+                <a href="#stack" class="hover:text-white transition-colors">Tech</a>
+                <a href="#projects" class="hover:text-white transition-colors">Projetos</a>
+                <a href="mailto:contato@exemplo.com" class="text-blue-500 hover:text-blue-400 transition-colors border border-blue-500/20 px-4 py-1.5 rounded-full">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home" class="relative pt-40 pb-24 px-6 blue-gradient">
+        <div class="max-w-4xl mx-auto text-center animate-reveal">
+            <span class="inline-block py-1 px-3 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-xs font-semibold mb-6 uppercase tracking-widest">
+                Senior Frontend & Software Architect
+            </span>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter text-white mb-6">
+                Wesley Rodrigues
+            </h1>
+            <p class="text-xl md:text-2xl text-zinc-400 font-light leading-relaxed mb-10 max-w-2xl mx-auto">
+                Desde 2021, transformando problemas complexos em <span class="text-white font-normal text-blue-500">sistemas resilientes</span> e soluções pragmáticas de alto desempenho.
+            </p>
+            <div class="flex justify-center gap-4">
+                <a href="#projects" class="px-8 py-3 bg-white text-black font-bold rounded-lg hover:bg-zinc-200 transition-all transform hover:scale-105">
+                    Explorar Projetos
+                </a>
+                <a href="#stack" class="px-8 py-3 border border-zinc-700 text-white font-medium rounded-lg hover:bg-zinc-900 transition-all">
+                    Minha Stack
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section id="stack" class="py-24 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+            <div class="glass p-6 rounded-2xl">
+                <i data-lucide="layers" class="text-blue-500 mb-4"></i>
+                <h3 class="text-white font-bold mb-2">Arquitetura</h3>
+                <p class="text-zinc-500 text-sm">Microservices, Clean Code, Event-Driven e SOLID.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <i data-lucide="zap" class="text-blue-500 mb-4"></i>
+                <h3 class="text-white font-bold mb-2">Frontend</h3>
+                <p class="text-zinc-500 text-sm">React, Next.js, TypeScript e Performance Web.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <i data-lucide="cpu" class="text-blue-500 mb-4"></i>
+                <h3 class="text-white font-bold mb-2">Backend</h3>
+                <p class="text-zinc-500 text-sm">Node.js, Go, PostgreSQL e arquiteturas distribuídas.</p>
+            </div>
+            <div class="glass p-6 rounded-2xl">
+                <i data-lucide="shield-check" class="text-blue-500 mb-4"></i>
+                <h3 class="text-white font-bold mb-2">DevOps</h3>
+                <p class="text-zinc-500 text-sm">Docker, AWS, CI/CD e monitoramento resiliente.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-zinc-950/50">
+        <div class="max-w-6xl mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div>
+                    <h2 class="text-4xl font-bold text-white tracking-tight">Engenharia Pragmática</h2>
+                    <p class="text-zinc-500 mt-2">Valores que guiam cada decisão técnica.</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="border-l border-zinc-800 pl-6 py-4">
+                    <h4 class="text-blue-500 font-bold uppercase text-xs tracking-widest mb-2">Pragmatismo</h4>
+                    <p class="text-zinc-300">Escolha de ferramentas baseada em ROI e manutenção a longo prazo, não em hype de mercado.</p>
+                </div>
+                <div class="border-l border-zinc-800 pl-6 py-4">
+                    <h4 class="text-blue-500 font-bold uppercase text-xs tracking-widest mb-2">Escalabilidade</h4>
+                    <p class="text-zinc-300">Design de sistemas que suportam o crescimento do negócio sem necessidade de refatoração total.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="py-24 max-w-6xl mx-auto px-6">
+        <h2 class="text-4xl font-bold text-white tracking-tight mb-12 text-center">Projetos em Destaque</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            
+            <div class="glass p-8 rounded-3xl group hover:border-blue-500/50 transition-all duration-500">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="p-3 bg-blue-500/10 rounded-xl">
+                        <i data-lucide="code-2" class="text-blue-500"></i>
+                    </div>
+                    <i data-lucide="external-link" class="text-zinc-600 group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-6 tracking-tight">Sistema de Pagamentos Distribuído</h3>
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-[10px] font-black uppercase text-blue-500 tracking-widest">O Desafio Técnico</span>
+                        <p class="text-zinc-400 text-sm mt-1 leading-relaxed">Garantir idempotência e consistência eventual em um ambiente com mais de 5.000 transações simultâneas.</p>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-black uppercase text-emerald-500 tracking-widest">A Solução</span>
+                        <p class="text-zinc-400 text-sm mt-1 leading-relaxed">Implementação de Outbox Pattern com Redis Streams e workers em Go para processamento assíncrono resiliente.</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-zinc-800 flex gap-3">
+                    <span class="text-xs text-zinc-600 font-mono">#golang</span>
+                    <span class="text-xs text-zinc-600 font-mono">#redis</span>
+                    <span class="text-xs text-zinc-600 font-mono">#architecture</span>
+                </div>
+            </div>
+
+            <div class="glass p-8 rounded-3xl group hover:border-blue-500/50 transition-all duration-500">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="p-3 bg-blue-500/10 rounded-xl">
+                        <i data-lucide="globe" class="text-blue-500"></i>
+                    </div>
+                    <i data-lucide="external-link" class="text-zinc-600 group-hover:text-white transition-colors"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-white mb-6 tracking-tight">Otimização de LCP para E-commerce</h3>
+                <div class="space-y-6">
+                    <div>
+                        <span class="text-[10px] font-black uppercase text-blue-500 tracking-widest">O Desafio Técnico</span>
+                        <p class="text-zinc-400 text-sm mt-1 leading-relaxed">Reduzir o tempo de carregamento inicial (LCP) de 4.5s para menos de 1.2s em conexões 3G.</p>
+                    </div>
+                    <div>
+                        <span class="text-[10px] font-black uppercase text-emerald-500 tracking-widest">A Solução</span>
+                        <p class="text-zinc-400 text-sm mt-1 leading-relaxed">Migração para Next.js 14 (App Router), otimização agressiva de imagens via CDN e code-splitting estratégico.</p>
+                    </div>
+                </div>
+                <div class="mt-8 pt-6 border-t border-zinc-800 flex gap-3">
+                    <span class="text-xs text-zinc-600 font-mono">#nextjs</span>
+                    <span class="text-xs text-zinc-600 font-mono">#performance</span>
+                    <span class="text-xs text-zinc-600 font-mono">#web-vitals</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="py-24 border-t border-zinc-900 mt-20">
+        <div class="max-w-6xl mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-4 italic tracking-tight underline decoration-blue-500">Pronto para escalar?</h2>
+            <p class="text-zinc-500 mb-10 max-w-lg mx-auto">Atualmente aceitando projetos de consultoria em arquitetura e desenvolvimento full-stack sênior.</p>
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="#" class="text-zinc-400 hover:text-blue-500 transition-colors flex items-center gap-2 text-sm font-medium">
+                    <i data-lucide="github" size="18"></i> Github
+                </a>
+                <a href="#" class="text-zinc-400 hover:text-blue-500 transition-colors flex items-center gap-2 text-sm font-medium">
+                    <i data-lucide="linkedin" size="18"></i> LinkedIn
+                </a>
+                <a href="#" class="text-zinc-400 hover:text-blue-500 transition-colors flex items-center gap-2 text-sm font-medium">
+                    <i data-lucide="mail" size="18"></i> Email
+                </a>
+            </div>
+            <p class="text-zinc-800 text-xs font-mono uppercase tracking-[0.2em]">© 2021-2025 WESLEY RODRIGUES // 45.9184° N, 122.3917° W</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+  </html>
+  
